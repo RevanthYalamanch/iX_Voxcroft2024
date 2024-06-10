@@ -12,8 +12,8 @@ def clean_names(name):
 df['Cleaned_Name'] = df['Name'].apply(clean_names)
 
 def match_names(row):
-    if 'biden' in row['Cleaned_Name']:
-        return 'Joe Biden'
+    if 'zuma' in row['Cleaned_Name']:
+        return 'Jacob Zuma'
     return row['Cleaned_Name']
 
 df['Matched_Name'] = df.apply(match_names, axis=1)
